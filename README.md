@@ -17,9 +17,24 @@ This project is a personal learning project for Python, CLI development, file op
 
 ## Usage
 
+Install the project in editable mode:
+
+```powershell
+python -m pip install -e .
+```
+
+Run the command:
+
 ```powershell
 photo-organizer INPUT_DIR OUTPUT_DIR
 photo-organizer INPUT_DIR OUTPUT_DIR --dry-run
+```
+
+Example:
+
+```powershell
+photo-organizer data\sample_input output
+photo-organizer data\sample_input output --dry-run
 ```
 
 ## Development setup
@@ -29,6 +44,12 @@ Create and activate a virtual environment:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
+```
+
+Install the project in editable mode:
+
+```powershell
+python -m pip install -e .
 ```
 
 Install test dependencies:
