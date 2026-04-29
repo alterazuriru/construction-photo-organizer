@@ -17,8 +17,31 @@ This project is a personal learning project for Python, CLI development, file op
 
 ## Usage
 
+```powershell
 photo-organizer INPUT_DIR OUTPUT_DIR
 photo-organizer INPUT_DIR OUTPUT_DIR --dry-run
+```
+
+## Development setup
+
+Create and activate a virtual environment:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Install test dependencies:
+
+```powershell
+python -m pip install pytest
+```
+
+Run tests:
+
+```powershell
+python -m pytest
+```
 
 ## Notice / Disclaimer
 
@@ -29,10 +52,6 @@ photo-organizer INPUT_DIR OUTPUT_DIR --dry-run
 - If you use this tool in your own environment, you are responsible for testing and operation.
 - The developer is not responsible for any damage caused by using this tool.
 - License: MIT License.
-
-## Development
-
-Tests will be added with pytest.
 
 ## License
 
