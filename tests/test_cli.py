@@ -64,3 +64,19 @@ def test_organize_images_copies_files_and_writes_csv(tmp_path: Path) -> None:
             "output_path": str(copied_file),
         }
     ]
+
+def test_organize_images_dry_run_does_not_write_files(tmp_path: Path) -> None:
+    input_dir = tmp_path / "input"
+    output_dir = tmp_path / "output"
+    input_dir.mkdir()
+
+    image_file = input_dir / "photo.jpg"
+    image_file.write_text("dummy image", encoding="utf-8")
+
+    timestamp = 1_700_000_000
+    os.utime(image_file, (timestamp, timestamp))
+
+    count = organize_images(input_dir, output_dir, dry_run=True)
+
+    assert count == 1
+    assert not output_dir.exists()
