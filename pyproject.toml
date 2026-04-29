@@ -1,0 +1,13 @@
+﻿[project]
+name = "construction-photo-organizer"
+version = "0.1.0"
+description = "A small Python CLI tool for organizing image files by modified date."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+photo-organizer = "construction_photo_organizer.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
