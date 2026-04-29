@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "construction-photo-organizer"
 version = "0.1.0"
 description = "A small Python CLI tool for organizing image files by modified date."
