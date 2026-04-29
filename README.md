@@ -64,6 +64,29 @@ Run tests:
 python -m pytest
 ```
 
+
+## v1 Scope / Limitations
+
+This v1 focuses on simple local file organization.
+
+Included:
+
+- Local image files only
+- .jpg, .jpeg, and .png files
+- Sorting by file modified time
+- Copying files without modifying originals
+- CSV rename mapping output
+
+Not included:
+
+- EXIF date handling
+- Recursive directory scanning
+- GUI
+- Web app
+- AI image recognition
+- OCR
+- Cloud sync
+- Real construction site photos or company data
 ## Notice / Disclaimer
 
 - This repository is a personal learning project.
@@ -77,3 +100,4 @@ python -m pytest
 ## License
 
 MIT License.
+
